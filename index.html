@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test animation kids game</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/custom.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="graphic-container">
+				<div id="lblStatusMessage" class="jumbotron status-container hidden">
+					<h1 class="question"></h1>
+					<div class="media">
+						<div class="media-body media-middle">
+							<h2 class="answer"></h2>
+						</div>
+						<div class="media-right media-middle">
+							<h2 class="answer-status"></h2>
+						</div>
+					</div>
+					<div class="btn-close">X</div>
+				</div>
+				<div id="divCloud1" class="cloud-container" style="top:300px; left:100px;">
+					<div class="cloud-container-rel">
+						<div class="cloud-body"></div>
+						<div class="cloud-body-top"></div>
+					</div>
+				</div>
+				<div id="divCloud2" class="cloud-container" style="top:310px; left:400px;">
+					<div class="cloud-container-rel">
+						<div class="cloud-body"></div>
+						<div class="cloud-body-top"></div>
+					</div>
+				</div>
+				<div id="divCloud3" class="cloud-container" style="top:300px; left:500px;">
+					<div class="cloud-container-rel">
+						<div class="cloud-body"></div>
+						<div class="cloud-body-top"></div>
+					</div>
+				</div>
+				<div id="divCloud4" class="cloud-container" style="top:320px; left:650px;">
+					<div class="cloud-container-rel">
+						<div class="cloud-body"></div>
+						<div class="cloud-body-top"></div>
+					</div>
+				</div>
+				<div id="divCloud5" class="cloud-container" style="top:300px; left:900px;">
+					<div class="cloud-container-rel">
+						<div class="cloud-body"></div>
+						<div class="cloud-body-top"></div>
+					</div>
+				</div>
+				<div class="skyline-container">
+					<div class="skyline-container-rel">
+						<div class="skyline-element" style="width:100px; height:50px; left:0px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:5px; height:40px; left:100px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:50px; height:125px; left:105px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:20px; height:100px; left:155px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:30px; height:40px; left:175px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:50px; height:60px; left:205px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:60px; height:130px; left:255px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:10px; height:60px; left:315px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:30px; height:160px; left:325px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:100px; height:60px; left:355px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:5px; height:40px; left:455px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:50px; height:70px; left:460px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:5px; height:50px; left:510px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:120px; height:90px; left:515px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:10px; height:70px; left:635px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:50px; height:100px; left:645px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:5px; height:40px; left:695px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:70px; height:60px; left:700px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:20px; height:70px; left:770px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:20px; height:140px; left:790px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:10px; height:180px; left:810px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:5px; height:200px; left:820px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:5px; height:60px; left:825px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:100px; height:100px; left:830px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:10px; height:70px; left:930px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:50px; height:80px; left:940px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:5px; height:40px; left:990px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:70px; height:60px; left:995px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:30px; height:50px; left:1065px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:10px; height:40px; left:1095px; bottom:5px;"></div>
+						<div class="skyline-element" style="width:35px; height:70px; left:1105px; bottom:5px;"></div>
+					</div>
+				</div>
+				<div id="tree1" class="tree-container" style="bottom:5px; left:-120px;">
+					<div class="tree-container-rel">
+						<div class="treetop-element" style="width:90px; height:90px; top:0; left:15px; border-radius:45px;"></div>
+						<div class="treetop-element" style="width:50px; height:50px; top:35px; left:0; border-radius:25px;"></div>
+						<div class="treetop-element" style="width:70px; height:70px; top:35px; right:0; border-radius:35px;"></div>
+						<div class="tree-element" style="width:10px; height:75px; bottom:0; left:55px;"></div>
+					</div>
+				</div>
+				<div id="tree2" class="tree-container" style="bottom:5px; right:-120px;">
+					<div class="tree-container-rel">
+						<div class="treetop-element" style="width:90px; height:90px; top:0; left:15px; border-radius:45px;"></div>
+						<div class="treetop-element" style="width:50px; height:50px; top:35px; left:0; border-radius:25px;"></div>
+						<div class="treetop-element" style="width:70px; height:70px; top:35px; right:0; border-radius:35px;"></div>
+						<div class="tree-element" style="width:10px; height:75px; bottom:0; left:55px;"></div>
+					</div>
+				</div>
+				<div id="divcar1" class="car-container car-body-blue" style="top:-300px; left:150px;">
+					<div class="car-container-rel">
+						<div class="car-window"></div>
+						<div class="car-body">
+							<span class="car-number">1</span>
+						</div>				
+						<div class="car-light"></div>
+						<div class="wheel" style="left:25px;"></div>
+						<div class="wheel" style="right:25px;"></div>
+					</div>
+				</div>
+				<div id="divcar2" class="car-container car-body-green" style="top:-300px; left:450px;">
+					<div class="car-container-rel">
+						<div class="car-window"></div>
+						<div class="car-body">
+							<span class="car-number">2</span>
+						</div>				
+						<div class="car-light"></div>
+						<div class="wheel" style="left:25px;"></div>
+						<div class="wheel" style="right:25px;"></div>
+					</div>
+				</div>		
+				<div id="divcar3" class="car-container car-body-red" style="top:-300px; left:750px;">
+					<div class="car-container-rel">
+						<div class="car-window"></div>
+						<div class="car-body">
+							<span class="car-number">3</span>
+						</div>				
+						<div class="car-light"></div>
+						<div class="wheel" style="left:25px;"></div>
+						<div class="wheel" style="right:25px;"></div>
+					</div>
+				</div>
+				<div class="road"></div>
+			</div>
+		</div>
+		<script src="js/jquery-2.2.3.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
+</html>
