@@ -33,7 +33,7 @@ body { font-family: Arial,Helvetica,sans-serif !important; }
 .treetop-element-3 { width:70px; height:70px; top:35px; right:0; border-radius:35px; }
 .cat-container { width:30px; height:32px; display:none; }
 .cat-ear { width:0px; height:0px; top:0; border-left:4px solid transparent; border-right:4px solid transparent; border-bottom:5px solid gray; }
-.cat-ear-left { left:0x; transform:rotate(-30deg); }
+.cat-ear-left { left:0; transform:rotate(-30deg); }
 .cat-ear-right { left:9px; transform:rotate(30deg); }
 .cat-head { top:3px; width:16px; height:14px; border-top-left-radius:7px; border-top-right-radius:7px; border-bottom-left-radius:10px; border-bottom-right-radius:10px; background-color:gray; }
 .cat-body { left:5px; top:14px; width:20px; height:16px; border-radius:10px; background-color:gray; transform:rotate(40deg); }
