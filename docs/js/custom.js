@@ -6,7 +6,6 @@ $(document).ready(function() {
 	$('#lblStatusMessage > .question').text(getQuestion());
 
 	$('.skyline-container').animate({ bottom:'0px' }, { duration:1000, complete:function() { treesAppearAnimation(); cloudsAppearAnimation(); dropCarsAnimation(); } });
-	setTimeout(function() { $('#lblStatusMessage').removeClass('hidden'); }, 4000);
 
 	$('.car-container').off('click').on('click', function(e) {
 		e.stopPropagation();
@@ -30,7 +29,7 @@ function treesAppearAnimation() {
 function dropCarsAnimation() {
 	setTimeout(function() { $('#divcar1').animate({ top:400 }, { duration:2000, easing:'easeOutBounce' }); }, 100);
 	setTimeout(function() { $('#divcar2').animate({ top:400 }, { duration:2000, easing:'easeOutBounce' }); }, 400);
-	setTimeout(function() { $('#divcar3').animate({ top:400 }, { duration:2000, easing:'easeOutBounce' });}, 800);
+	setTimeout(function() { $('#divcar3').animate({ top:400 }, { duration:2000, easing:'easeOutBounce', complete: function() { $('#lblStatusMessage').removeClass('hidden'); } });}, 800);
 }
 
 function animatecar() {
