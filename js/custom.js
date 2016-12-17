@@ -1,4 +1,4 @@
-var $car = null, colors = ['red', 'green', 'blue']; color = null, index = 0;
+var $car = null, colors = ['red', 'green', 'blue']; color = null, index = 0, animation = null;
 			
 $(document).ready(function() {
 	index = Math.floor(Math.random() * 3);
@@ -9,9 +9,8 @@ $(document).ready(function() {
 
 	$('.car-container').off('click').on('click', function(e) {
 		e.stopPropagation();
-		$(this).effect('shake', { distance:5, times:3 });
 		$car = $(this);
-		setAnswer();
+		setAnswer(function() { $car.effect(animation, { distance:5, times:3 }); });
 	});
 	
 	$('.btn-close').off('click').on('click', function() { $('#lblStatusMessage').slideUp('fast', function() {  location.reload(); });  });
@@ -24,6 +23,7 @@ function cloudsAppearAnimation() {
 function treesAppearAnimation() {
 	$('#tree1').animate({ left:'50px' }, { duration:150, easing:'easeInSine' });
 	$('#tree2').animate({ right:'50px' }, { duration:150, easing:'easeInSine' });
+	$('.cat-container').css({ left: (Math.floor(Math.random() * 1110) + 'px')}).toggle('fade');
 }
 
 function dropCarsAnimation() {
@@ -40,8 +40,11 @@ function getQuestion() {
 	return 'Please, click on a ' + color + ' car!';
 }
 
-function setAnswer() {
+function setAnswer(callback) {
+	animation = 'shake';
 	$('.answer').text('Selected car: ' + $car.find('.car-number').text());
-	if ($car.hasClass('car-body-' + color)) { $('.answer-status').text('Correct!').removeClass('answer-incorrect').removeClass('answer-correct').addClass('answer-correct');
+	if ($car.hasClass('car-body-' + color)) { animation = 'bounce';  $('.answer-status').text('Correct!').removeClass('answer-incorrect').removeClass('answer-correct').addClass('answer-correct');
 	} else { $('.answer-status').text('Incorrect!').removeClass('answer-correct').removeClass('answer-incorrect').addClass('answer-incorrect'); }
+	
+	if (callback != undefined) { callback(); }
 }

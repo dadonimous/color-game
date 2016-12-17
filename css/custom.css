@@ -5,10 +5,10 @@ html, body, .container { height:100%; }
 .btn-close { width:40px; height:40px; border-radius:20px; line-height:40px; text-align:center; font-size:20px; top:10px; right:10px; color:#FFFFFF; background-color:rgba(0, 0, 0, 0.3); cursor:pointer; }
 body { font-family: Arial,Helvetica,sans-serif !important; }
 .graphic-container { width:100%; height:525px; overflow:hidden; background: rgba(181,239,255,1); background: -moz-linear-gradient(top, rgba(181,239,255,1) 0%, rgba(232,250,255,1) 100%); background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(181,239,255,1)), color-stop(100%, rgba(232,250,255,1))); background: -webkit-linear-gradient(top, rgba(181,239,255,1) 0%, rgba(232,250,255,1) 100%); background: -o-linear-gradient(top, rgba(181,239,255,1) 0%, rgba(232,250,255,1) 100%); background: -ms-linear-gradient(top, rgba(181,239,255,1) 0%, rgba(232,250,255,1) 100%); background: linear-gradient(to bottom, rgba(181,239,255,1) 0%, rgba(232,250,255,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5efff', endColorstr='#e8faff', GradientType=0 ); }
-.status-container, .car-container, .car-body, .car-number, .car-window, .car-light, .wheel, .wheel-inner, .road, .cloud-container, .cloud-body, .cloud-body-top, .skyline-container, .skyline-element, .tree-container, .treetop-element, .tree-element, .btn-close { position:absolute; }
+.status-container, .car-container, .car-body, .car-number, .car-window, .car-light, .wheel, .wheel-inner, .road, .cloud-container, .cloud-body, .cloud-body-top, .skyline-container, .skyline-element, .tree-container, .treetop-element, .tree-element, .cat-container, .cat-ear, .cat-head, .cat-body, .cat-legs, .cat-tail, .btn-close { position:absolute; }
 .status-container { top:15px; left:15px; width:1110px; height:250px; border-radius:15px; background-color:rgba(0, 0, 0, 0.4); color:#FFFFFF; line-height:30px; }
 .status-container > h1 { text-align:center; }
-.graphic-container, .car-container-rel, .cloud-container-rel, .skyline-container-rel, .tree-container-rel { position:relative; width:100%; height:100%; }
+.graphic-container, .car-container-rel, .cloud-container-rel, .skyline-container-rel, .tree-container-rel, .cat-container-rel { position:relative; width:100%; height:100%; }
 .graphic-container { height:525px; }
 .car-container-rel { width:250px; height:120px; }
 .car-body { width:250px; height:60px; bottom:20px; left:0; border-top-left-radius:50px; border-top-right-radius:15px; border-bottom-right-radius:15px; border-bottom-left-radius:15px; }
@@ -31,6 +31,14 @@ body { font-family: Arial,Helvetica,sans-serif !important; }
 .treetop-element-1 { width:90px; height:90px; top:0; left:15px; border-radius:45px; }
 .treetop-element-2 { width:50px; height:50px; top:35px; left:0; border-radius:25px; }
 .treetop-element-3 { width:70px; height:70px; top:35px; right:0; border-radius:35px; }
+.cat-container { width:30px; height:32px; display:none; }
+.cat-ear { width:0px; height:0px; top:0; border-left:4px solid transparent; border-right:4px solid transparent; border-bottom:5px solid gray; }
+.cat-ear-left { left:0x; transform:rotate(-30deg); }
+.cat-ear-right { left:9px; transform:rotate(30deg); }
+.cat-head { top:3px; width:16px; height:14px; border-top-left-radius:7px; border-top-right-radius:7px; border-bottom-left-radius:10px; border-bottom-right-radius:10px; background-color:gray; }
+.cat-body { left:5px; top:14px; width:20px; height:16px; border-radius:10px; background-color:gray; transform:rotate(40deg); }
+.cat-legs { left:8px; bottom:0; width:16px; height:12px; border-radius:2px; background-color:gray; }
+.cat-tail { left:20px; bottom:4px; width:10px; height:10px; border-radius:5px; background:transparent; border-right:3px solid gray; border-bottom:3px solid gray; }
 
 .car-body-green > .car-container-rel > .car-body { background:green; background:-webkit-linear-gradient(lightgreen, green); background:-o-linear-gradient(lightgreen, green); background:-moz-linear-gradient(lightgreen, green); background:linear-gradient(lightgreen, green); }
 .car-body-green > .car-container-rel > .car-window { border-left:10px solid lightgreen; border-top:10px solid lightgreen; border-right:10px solid lightgreen; }
