@@ -5,7 +5,7 @@ $(document).ready(function() {
 	color = colors[index];
 	$('#lblStatusMessage > .question').text(getQuestion());
 
-	$('.skyline-container').animate({ bottom:'0px' }, { duration:1000, complete:function() { treesAppearAnimation(); cloudsAppearAnimation(); dropCarsAnimation(); } });
+	$('.skyline-container').animate({ bottom:'5px' }, { duration:1000, complete:function() { treesAppearAnimation(); cloudsAppearAnimation(); dropCarsAnimation(); } });
 
 	$('.car-container').off('click').on('click', function(e) {
 		e.stopPropagation();
